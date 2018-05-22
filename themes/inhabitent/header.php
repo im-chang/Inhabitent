@@ -12,6 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+		<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 
 	<?php wp_head(); ?>
 	</head>
@@ -21,15 +22,26 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
+			<div class="container">
 				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-				</div><!-- .site-branding -->
+					<div class="logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-tent-white.svg'; ?>" class="logo" alt="Inhabitent Logo" />
+						<a href=""
+						</a>
+						</div>
+				</div>
+			<!-- end of logo icon -->
+	<nav class="site-navi" role="navigation">
+		<div class="navigation-container">
+			<ul class="navigation-list">
+				<li><a href="#shop">SHOP</a></li>
+				<li><a href="#journal">JOURNAL</a></li>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#findus">FIND US</a></li>
+			</ul>
+		</div>
+		<div class="search">
+		</div>
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
-			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

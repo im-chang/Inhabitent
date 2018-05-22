@@ -666,3 +666,5 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+body {
+  background-color: green; }
