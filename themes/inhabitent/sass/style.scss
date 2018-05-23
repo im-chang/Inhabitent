@@ -64,6 +64,105 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media";
 @import "page-templates";
 
-body {
-	background-color: green;
+.site-header .container {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo img {
+	display: flex;
+	justify-content: flex-start;
+	height: 33px;
+	width: 55px;
+
+}
+
+.site-branding {
+	max-width: 55px;
+	display: block;
+	margin: 0;
+}
+
+.navigation-container {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navigation-list li {
+	list-style-type: none;
+	display: flex;
+	display: inline-block;
+	justify-content: flex-end;
+}
+
+.hero-logo {
+	align-content: center;
+	display: flex;
+	justify-content: center;
+}
+
+.product-container h2 {
+	display: flex;
+	justify-content: center;
+}
+
+.product-type-blocks {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.journal-container h2 {
+	display: flex;
+	justify-content: center;
+}
+
+.journal-entries li {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.adventure h2 {
+	display: flex;
+	justify-content: center;
+}
+
+.adventure ul {
+	display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 2fr;
+    grid-gap: 20px 20px;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+.canoe {
+	grid-column: 1/span 2;
+    grid-row: 1/span 2;
+}
+
+.night {
+	grid-column: 3/span 2;
+    grid-row: 1/span 1;
+}
+.mountain {
+	grid-column: 3;
+	grid-row: 2;
+}
+
+.stars {
+	grid-column: 4;
+	grid-row: 2;
+}
+
+.footer-logo {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.copyright {
+	display: flex;
+	justify-content: center;
 }

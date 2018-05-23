@@ -28,7 +28,7 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-tent-white.svg'; ?>" class="logo" alt="Inhabitent Logo" />
 						<a href=""
 						</a>
-						</div>
+					</div>
 				</div>
 			<!-- end of logo icon -->
 	<nav class="site-navi" role="navigation">
@@ -42,6 +42,8 @@
 		</div>
 		<div class="search">
 		</div>
+	</nav>
 
 
 			<div id="content" class="site-content">
+	</header>
