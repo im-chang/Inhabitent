@@ -33,12 +33,7 @@
 			<!-- end of logo icon -->
 	<nav class="site-navi" role="navigation">
 		<div class="navigation-container">
-			<ul class="navigation-list">
-				<li><a href="#shop">SHOP</a></li>
-				<li><a href="#journal">JOURNAL</a></li>
-				<li><a href="#about">ABOUT</a></li>
-				<li><a href="#findus">FIND US</a></li>
-			</ul>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</div>
 		<div class="search">
 		</div>

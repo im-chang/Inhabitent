@@ -4,7 +4,7 @@
  * 
  * The template for displaying all pages.
  *
- * @package Inhabitent_Theme
+ * @package RED_Starter_Theme
  */
 
 get_header(); ?>
