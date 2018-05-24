@@ -54,15 +54,16 @@ get_header(); ?>
 </section> <!--end of content -->
 <section class="journal">
     <div class="journal-container">
-        <h2>Inhabitent Journal</h2>
+        <h2 class="ijournal">Inhabitent Journal</h2>
             <ul class="journal-entries">
                 <li>
                     <?php
                     $args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 3);
                     $journal_posts = get_posts( $args );
                     ?>
-                    <div class="seperate-entries">
                     <?php foreach ($journal_posts as $post ) : setup_postdata ( $post ); ?>
+                    <div class="seperate-entries">
+                        <div class="journal-image">
                     <?php
                         if ( has_post_thumbnail() ) :
                             the_post_thumbnail( 'large' );
@@ -70,17 +71,17 @@ get_header(); ?>
 
                         // echo the_title;
                         ?>
-
-
-                        <h2 class="journal-title"><?php the_title(); ?></h2>
+                        </div>
                         
                         <div class="entry-meta">
                                 <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
                             </div><!-- .entry-meta -->
+
+                            <h2 class="journal-title"><?php the_title(); ?></h2>
                             
-                            <a href="<?php echo the_permalink(); ?>">Read More</a>
+                            <a class="btn2" href="<?php echo the_permalink(); ?>">Read More</a>
                     </div>
-                    <div class="seperate-entries">
+                    
                     <?php endforeach; wp_reset_postdata(); ?>
                     </div>
                 </li>

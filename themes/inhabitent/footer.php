@@ -14,16 +14,16 @@
 					<div class="footer-item">
 						<div class="contact">
 							<h3>CONTACT INFO</h3>
-							<p><i class="fa fa-envelope"></i>
+							<!-- <p><i class="fa fa-envelope"></i> -->
 							<a href="mailto:info@inhabitent.com">info@inhabitent.com</a>
 							</p>
-							<p><i class="fa fa-phone"></i>
+							<!-- <p><i class="fa fa-phone"></i> -->
 							<a href="tel:7784567891">778-456-7891</a>
 							</p>
 							<p>
-							<span><i class="fa fa-facebook-square"></span>
+							<!-- <span><i class="fa fa-facebook-square"></span>
 							<span><i class="fa fa-twitter-square"></span>
-							<span><i class="fa fa-google-plus-square"></span>
+							<span><i class="fa fa-google-plus-square"></span> -->
 							</p>
 						</div>
 					</div>
@@ -49,9 +49,7 @@
 						</div>
 						<div class="footer-item">
 							<div class="footer-logo">
-							<a href>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-text-dark.svg" alt="footer logo"/>
-							</a>
 							</div>
 						</div>
 					</div>
@@ -60,9 +58,9 @@
 						Copyright © 2017 Inhabitent					
 						</div>
 					</div>
-				</div> <!--end of footer-block -->
+				
 			</footer><!-- #footer -->
-		</div><!-- #page -->
+		
 
 		<?php wp_footer(); ?>
 
