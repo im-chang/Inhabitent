@@ -6,10 +6,9 @@
  */
 
 get_header(); ?>
-
+<div class="journal-posts">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -37,4 +36,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
+
+</div>
 <?php get_footer(); ?>

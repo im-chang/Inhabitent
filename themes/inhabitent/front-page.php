@@ -7,10 +7,7 @@
 
  
 get_header(); ?>
-    <header>
-    </header>
-
-<div id="content" class="site-content">
+   
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
             <section class="hero-logo">
@@ -52,6 +49,7 @@ get_header(); ?>
                 </div>
                 </div>
 </section> <!--end of content -->
+
 <section class="journal">
     <div class="journal-container">
         <h2 class="ijournal">Inhabitent Journal</h2>
@@ -68,7 +66,6 @@ get_header(); ?>
                         if ( has_post_thumbnail() ) :
                             the_post_thumbnail( 'large' );
                         endif;
-
                         // echo the_title;
                         ?>
                         </div>
@@ -131,6 +128,4 @@ get_header(); ?>
 </section>
 		</main><!-- #main -->
     </div><!-- #primary -->
-</div><!-- #content -->
-
 <?php get_footer(); ?>

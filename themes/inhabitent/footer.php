@@ -10,6 +10,7 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="footer-container">
 				<div class="footer-block">
 					<div class="footer-item">
 						<div class="contact">
@@ -33,23 +34,23 @@
 								<p>
 									<span class="hours-info">
 									Monday-Friday:
-									</span>" 9am to 5pm"
+									</span> 9am to 5pm
 								</p>
 								<p>
 									<span class="hours-info">
 									Saturday:</span>
-									" 10am to 2pm"
+									 10am to 2pm
 								</p>
 								<p>
 									<span class="hours-info">
 									Sunday:</span>
-									" Closed"
+									 Closed
 								</p>
 							</div>
 						</div>
 						<div class="footer-item">
 							<div class="footer-logo">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-text-dark.svg" alt="footer logo"/>
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-text.svg" alt="footer logo"/>
 							</div>
 						</div>
 					</div>
@@ -58,6 +59,7 @@
 						Copyright © 2017 Inhabitent					
 						</div>
 					</div>
+</div>
 				
 			</footer><!-- #footer -->
 		

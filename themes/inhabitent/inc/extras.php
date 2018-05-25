@@ -80,7 +80,13 @@ function inhabitent_dynamic_css() {
 	.entry-title {
 		color: white;
 		text-align: center;
-		vertical-align: middle;
+		position: relative;
+		top: 360px;
+		margin-bottom: .5rem;
+		font-family: Novecento Sans Web,sans-serif;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		font-size: 3rem;
 	}
 	";
 
@@ -90,3 +96,29 @@ function inhabitent_dynamic_css() {
 }
 
 add_action('wp_enqueue_scripts', 'inhabitent_dynamic_css');
+
+add_filter('get_the_archive_title', 'inhabitent_archive_title');
+function inhabitent_archive_title( $title ){
+	if( is_post_type_archive('product') ){
+		$title = 'Shop Stuff';
+	}
+	elseif( is_tax('product_type')) {
+		$title = single_term_title('', false);
+	}
+
+	return $title;
+}
+
+add_action('pre_get_posts', 'inhabitent_modify_archive_queries');
+function inhabitent_modify_archive_queries( $query ){
+	if( is_post_type_archive( array('product') ) ||
+	$query->is_tax( 'product_type' ) &&
+	!is_admin() &&
+	$query->is_main_query()
+	)
+	{
+		$query->set('orderby', 'title');
+		$query->set('order', 'ASC');
+		$query->set('posts_per_page', 16);
+	}
+}
