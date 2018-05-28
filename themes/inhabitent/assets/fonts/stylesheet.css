@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url('Merriweather-BoldItalic.woff2') format('woff2'),
+        url('Merriweather-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('Merriweather-LightItalic.woff2') format('woff2'),
+        url('Merriweather-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('Merriweather-Bold.woff2') format('woff2'),
+        url('Merriweather-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '.';
+    src: url('7d984d59c186880dc1cbe0cbc78cfdf7.woff2') format('woff2'),
+        url('7d984d59c186880dc1cbe0cbc78cfdf7.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('Merriweather-Light.woff2') format('woff2'),
+        url('Merriweather-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '.';
+    src: url('ea32d7a417fa146c0a4460d78570703d.woff2') format('woff2'),
+        url('ea32d7a417fa146c0a4460d78570703d.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

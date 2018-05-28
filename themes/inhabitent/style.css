@@ -666,6 +666,49 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+@font-face {
+  font-family: 'Merriweather-Bold-Italic';
+  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather-Italic';
+  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-LightItalic.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather-Bold';
+  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Bold.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento-Bold';
+  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/7d984d59c186880dc1cbe0cbc78cfdf7.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/7d984d59c186880dc1cbe0cbc78cfdf7.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Light.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/ea32d7a417fa146c0a4460d78570703d.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/ea32d7a417fa146c0a4460d78570703d.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.body {
+  color: #404040;
+  font-family: 'Merriweather';
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75; }
+
 .site-header {
   position: absolute;
   text-shadow: 1px 1px 2px #323232;
@@ -684,14 +727,12 @@ object {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 16px;
-  padding-bottom: 16px; }
+  padding-top: 5px;
+  padding-bottom: 5px; }
 
-.logo {
-  margin-left: 1rem; }
-  .logo img {
-    height: 33px;
-    width: 55px; }
+.logo img {
+  height: 33px;
+  width: 55px; }
 
 .site-branding {
   display: block; }
@@ -701,13 +742,16 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .search-navi ul {
+    margin-bottom: 0; }
   .search-navi li {
     padding: 1.5rem;
-    font-family: Novecento Sans Web,sans-serif;
+    font-family: 'Novecento';
     text-transform: uppercase;
     display: inline; }
-    .search-navi li a {
-      text-decoration: none; }
+  .search-navi a {
+    text-decoration: none;
+    color: white; }
 
 .hero-logo {
   -ms-flex-line-pack: center;
@@ -788,11 +832,13 @@ object {
   text-transform: uppercase; }
 
 .journal-title {
+  font-family: 'Novecento-Bold';
   margin-top: 0;
   margin-bottom: 0;
   color: #248a83;
   text-align: left;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  text-transform: uppercase; }
 
 .journal-entries {
   display: -webkit-box;
@@ -888,7 +934,13 @@ object {
 .footer-container {
   width: 1120px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  font-family: 'Merriweather'; }
+  .footer-container h3 {
+    font-family: 'Novecento-Bold'; }
+  .footer-container a {
+    text-decoration: none;
+    color: white; }
 
 .footer-block {
   display: grid;
@@ -925,9 +977,10 @@ object {
   grid-gap: 1.5rem;
   margin-bottom: 1.5rem; }
   .shop-items article {
-    border: 1px solid #e1e1e1;
-    height: auto;
-    width: auto; }
+    border: 1px solid #e1e1e1; }
+    .shop-items article img {
+      height: 255px;
+      width: 100vw; }
 
 .journal-posts {
   display: grid;
@@ -946,20 +999,51 @@ object {
   padding-top: 50px; }
 
 .content-area {
-  border-right: 1px solid #e1e1e1; }
+  border-right: 1px solid #e1e1e1;
+  font-family: 'Merriweather'; }
 
 .widget-area {
   color: #404040;
-  font-family: Merriweather Web,serif;
+  font-family: 'Merriweather';
   font-size: 1rem;
   line-height: 1.75;
   padding-left: 5%; }
+  .widget-area h2 {
+    font-family: 'Novecento-Bold';
+    font-size: 1.5rem; }
+  .widget-area a {
+    color: #248a83;
+    text-decoration: none;
+    text-transform: capitalize; }
+  .widget-area ul {
+    margin-left: 0;
+    padding-left: 0; }
+  .widget-area li {
+    list-style-type: none; }
 
 .entry-content {
   margin: 3rem auto;
   max-width: 800px; }
   .entry-content h2 {
     text-align: center; }
+
+.entry-title {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Merriweather Web,serif;
+  letter-spacing: 0;
+  line-height: 1.75;
+  padding-right: .25rem; }
+  .entry-title a {
+    text-decoration: none;
+    background: #fff;
+    float: left; }
+
+.product-span {
+  float: right; }
+
+.individual-price {
+  float: right; }
 
 .product-blocks {
   display: -webkit-box;
@@ -1008,3 +1092,53 @@ label {
   width: 1120px;
   margin-left: auto;
   margin-right: auto; }
+
+iframe {
+  width: 100vw;
+  height: 300px; }
+
+.shop-stuffs {
+  padding-top: 50px;
+  width: 1120px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.page-header {
+  text-align: center;
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 3rem; }
+  .page-header h1 {
+    text-transform: uppercase; }
+  .page-header p {
+    margin-bottom: 1.5rem;
+    font-family: Merriweather Web,serif;
+    font-size: 1rem;
+    line-height: 1.75; }
+
+.page-id-162 .site-header {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  -webkit-transition: top .5s linear;
+  transition: top .5s linear;
+  width: 100%;
+  z-index: 3; }
+
+.page-id-162 .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1120px;
+  margin-left: 0;
+  margin-right: 0; }
+
+.page-id-162 .site-navi a {
+  color: #248a83;
+  text-decoration: none;
+  text-shadow: none; }

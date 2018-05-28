@@ -64,6 +64,61 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media";
 @import "page-templates";
 
+@font-face {
+    font-family: 'Merriweather-Bold-Italic';
+    src: url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-BoldItalic.woff2') format('woff2'),
+        url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather-Italic';
+    src: url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-LightItalic.woff2') format('woff2'),
+        url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather-Bold';
+    src: url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Bold.woff2') format('woff2'),
+        url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Novecento-Bold';
+    src: url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/7d984d59c186880dc1cbe0cbc78cfdf7.woff2') format('woff2'),
+        url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/7d984d59c186880dc1cbe0cbc78cfdf7.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Light.woff2') format('woff2'),
+        url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Novecento';
+    src: url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/ea32d7a417fa146c0a4460d78570703d.woff2') format('woff2'),
+        url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/ea32d7a417fa146c0a4460d78570703d.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.body {
+	color: #404040;
+    font-family: 'Merriweather';
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75;
+}
 
 .site-header {
 	position: absolute;
@@ -81,12 +136,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .container {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 16px;
-	padding-bottom: 16px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .logo {
-	margin-left: 1rem;
 
 	img {
 		height: 33px;
@@ -103,16 +157,22 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	list-style-type: none;
 	display: flex;
 
+	ul {
+		margin-bottom: 0;
+	}
+
 	li {
 		padding: 1.5rem;
-		font-family: Novecento Sans Web,sans-serif;
+		font-family: 'Novecento';
 		text-transform: uppercase;
 		display: inline;
+	}
 
 	a {
 		text-decoration: none;
+		color: white;
 	}
-	}
+
 }
 
 
@@ -195,11 +255,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 
 .journal-title {
+	font-family: 'Novecento-Bold';
 	margin-top: 0;
 	margin-bottom: 0;
 	color: #248a83;
 	text-align: left;
 	font-size: 1.3rem;
+	text-transform: uppercase;
 }
 
 .journal-entries {
@@ -305,6 +367,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	width: 1120px;
 	margin-left: auto;
 	margin-right: auto;
+	font-family: 'Merriweather';
+	
+		h3 {
+			font-family: 'Novecento-Bold';
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+		}
 }
 
 .footer-block {
@@ -348,8 +420,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 	article {
 		border: 1px solid #e1e1e1;
-		height: auto;
-		width: auto;
+
+			img {
+				height: 255px;
+				width: 100vw;
+			}
 	}
 
 }
@@ -374,14 +449,36 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 .content-area {
 	border-right: 1px solid #e1e1e1;
+	font-family: 'Merriweather';
 }
 
 .widget-area {
 	color: #404040;
-    font-family: Merriweather Web,serif;
+    font-family: 'Merriweather';
     font-size: 1rem;
 	line-height: 1.75;
 	padding-left: 5%;
+
+	h2 {
+		font-family: 'Novecento-Bold';
+		font-size: 1.5rem;
+	}
+
+	a {
+		color: #248a83;
+		text-decoration: none;
+		text-transform: capitalize;
+	}
+
+	ul {
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
 }
 
 .entry-content {
@@ -393,6 +490,30 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		}
 }
 
+.entry-title {
+	font-size: 1rem;
+    font-weight: 400;
+    font-family: Merriweather Web,serif;
+    letter-spacing: 0;
+    line-height: 1.75;
+	padding-right: .25rem;
+
+
+		a {
+			text-decoration: none;
+			background: #fff;
+			float: left;
+		}
+
+
+}
+.product-span {
+	float: right;
+}
+
+.individual-price {
+	float: right;
+}
 .product-blocks {
 	display: flex;
 	justify-content: center;
@@ -439,4 +560,61 @@ label {
 	width: 1120px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+iframe {
+	width: 100vw;
+	height: 300px;
+}
+
+.shop-stuffs {
+	padding-top: 50px;
+	width: 1120px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.page-header {
+	text-align: center;
+	border-bottom: 1px dashed #c8c8c8;
+	margin-bottom: 3rem;
+	
+	h1 {
+		text-transform: uppercase;
+	}
+
+	p {
+		margin-bottom: 1.5rem;
+		font-family: Merriweather Web,serif;
+		font-size: 1rem;
+		line-height: 1.75;
+	}
+}
+
+.page-id-162 {
+
+	.site-header {
+		background-color: hsla(0,0%,100%,.85);
+		border-bottom: 1px solid #e1e1e1;
+		position: fixed;
+		transition: top .5s linear;
+		width: 100%;
+		z-index: 3;
+	}
+
+	.container {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		width: 1120px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.site-navi a {
+		color: #248a83;
+		text-decoration: none;
+		text-shadow: none;
+	}
+
 }

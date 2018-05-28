@@ -27,7 +27,7 @@
 				<div class="site-branding">
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-tent-white.svg'; ?>" class="logo" alt="Inhabitent Logo" />
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-tent-white.svg'; ?>" class="logo-tent" alt="Inhabitent Logo" />
 						</a>	
 				</div>
 				</div>
