@@ -9,6 +9,7 @@ get_header(); ?>
 <div class="journal-posts">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<div class="journal-main">
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -31,6 +32,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 			
 		<?php endif; ?>
+		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

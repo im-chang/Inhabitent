@@ -8,6 +8,7 @@
 get_header(); ?>
 	<div class="find-us-entries">
 	<div id="primary" class="content-area">
+		<div class="find-us-main">
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -16,6 +17,7 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

@@ -28,10 +28,10 @@ get_header(); ?>
                         <?php the_post_thumbnail( 'full' ); ?>
                     <?php endif; ?>
 
-                    <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+                    <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' ); ?>
 					<span class="individual-price">
                     <?php echo CFS()->get( 'price' ); ?>
-					</span>
+					</span></h2>
                 </header><!-- .entry-header -->
 
             </article><!-- #post-## -->

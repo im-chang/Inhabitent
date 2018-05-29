@@ -4,7 +4,6 @@
  *
  * @package Inhabitent_Theme
  */
-
  
 get_header(); ?>
    
@@ -21,7 +20,6 @@ get_header(); ?>
                     'hide_empty' => 0,
                 ) );
                 // d($terms);
-
                 if ( ! empty( $terms ) && ! is_wp_error ( $terms ) ) : ?>
 
                     <div class="product-type-blocks">
@@ -90,7 +88,7 @@ get_header(); ?>
     <ul>
                 <li class="canoe">
                     <div class="adventure-thumbnail">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/canoe-girl.jpg" alt="van"/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/canoe-girl.jpg" alt="canoe"/>
                     </div>
                     <div class="adventure-time">
                         <h3 class="adventure-text">Getting Back to Nature in a Canoe</h3>
@@ -99,7 +97,7 @@ get_header(); ?>
                 </li>
                 <li class="night">
                     <div class="adventure-thumbnail">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/beach-bonfire.jpg" alt="van"/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/beach-bonfire.jpg" alt="beach"/>
                     </div>
                     <div class="adventure-time">
                         <h3 class="adventure-text">A Night with Friends at the Beach</h3>
@@ -108,7 +106,7 @@ get_header(); ?>
                 </li>
                 <li class="mountain">
                     <div class="adventure-thumbnail">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/mountain-hikers.jpg" alt="van"/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/mountain-hikers.jpg" alt="hikers"/>
                     </div>
                     <div class="adventure-time">
                         <h3 class="adventure-text">Taking in the View at Big Mountain</h3>
@@ -117,7 +115,7 @@ get_header(); ?>
                 </li>
                 <li class="stars">
                     <div class="adventure-thumbnail">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/night-sky.jpg" alt="van"/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adventure-photos/night-sky.jpg" alt="stars"/>
                     </div>
                     <div class="adventure-time">
                         <h3 class="adventure-text">Star-Gazing at the Night Sky</h3>
