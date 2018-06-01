@@ -225,6 +225,42 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather-Bold-Italic';
+  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather-Italic';
+  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-LightItalic.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather-Bold';
+  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Bold.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento-Bold';
+  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/7d984d59c186880dc1cbe0cbc78cfdf7.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/7d984d59c186880dc1cbe0cbc78cfdf7.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Light.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/ea32d7a417fa146c0a4460d78570703d.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/ea32d7a417fa146c0a4460d78570703d.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -564,6 +600,28 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.widget-area {
+  color: #404040;
+  font-family: 'Merriweather';
+  font-size: 1rem;
+  line-height: 1.75;
+  padding-left: 5%; }
+  .widget-area h2 {
+    font-family: 'Novecento-Bold';
+    font-size: 1.5rem; }
+  .widget-area a {
+    color: #248a83;
+    text-decoration: none; }
+  .widget-area i {
+    color: #404040; }
+  .widget-area .day-of-week {
+    font-family: 'Merriweather-Bold'; }
+  .widget-area ul {
+    margin-left: 0;
+    padding-left: 0; }
+  .widget-area li {
+    list-style-type: none; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -666,42 +724,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-@font-face {
-  font-family: 'Merriweather-Bold-Italic';
-  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Merriweather-Italic';
-  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-LightItalic.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-LightItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Merriweather-Bold';
-  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Bold.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Novecento-Bold';
-  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/7d984d59c186880dc1cbe0cbc78cfdf7.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/7d984d59c186880dc1cbe0cbc78cfdf7.woff") format("woff");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Merriweather';
-  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Light.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Novecento';
-  src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/ea32d7a417fa146c0a4460d78570703d.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/ea32d7a417fa146c0a4460d78570703d.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
 .body {
   color: #404040;
   font-family: 'Merriweather';
@@ -742,11 +764,15 @@ a {
   display: block; }
 
 .search-submit {
+  -webkit-box-shadow: none;
+          box-shadow: none;
   padding: 0;
   background: none;
   border: none; }
   .search-submit i {
-    color: #248a83; }
+    color: #248a83;
+    font-size: inherit;
+    padding-left: 1.5rem; }
 
 .search-navi {
   list-style-type: none;
@@ -757,7 +783,7 @@ a {
     margin: 0;
     padding: 0; }
   .search-navi li {
-    padding: 1rem;
+    padding-left: 1.5rem;
     padding-top: 0px;
     padding-bottom: 0px;
     font-family: 'Novecento';
@@ -1122,28 +1148,6 @@ a {
 
 .content-area {
   font-family: 'Merriweather'; }
-
-.widget-area {
-  color: #404040;
-  font-family: 'Merriweather';
-  font-size: 1rem;
-  line-height: 1.75;
-  padding-left: 5%; }
-  .widget-area h2 {
-    font-family: 'Novecento-Bold';
-    font-size: 1.5rem; }
-  .widget-area a {
-    color: #248a83;
-    text-decoration: none; }
-  .widget-area i {
-    color: #404040; }
-  .widget-area .day-of-week {
-    font-family: 'Merriweather-Bold'; }
-  .widget-area ul {
-    margin-left: 0;
-    padding-left: 0; }
-  .widget-area li {
-    list-style-type: none; }
 
 .entry-content {
   max-width: 800px; }
@@ -1645,73 +1649,62 @@ iframe {
 .single-post .site-footer a:visited {
   color: #fff; }
 
-.error404 .site-header {
-  background-color: rgba(255, 255, 255, 0.85);
-  border-bottom: 1px solid #e1e1e1;
-  position: fixed;
-  -webkit-transition: top .5s linear;
-  transition: top .5s linear;
-  width: 100%;
-  z-index: 3;
-  top: 32px; }
-
-.error404 .container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 1120px;
-  margin-left: 0;
-  margin-right: 0; }
-
-.error404 .site-navi a {
-  color: #248a83;
-  text-decoration: none;
-  text-shadow: none; }
-
-.error404 .error-main {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px;
-  padding-top: 50px; }
-
-.error404 .widget-area {
-  border-left: 1px solid #e1e1e1; }
-
-.error404 .page-title {
-  text-transform: uppercase;
-  font-family: 'Novecento-Bold'; }
-
-.error404 .widget h2 {
-  text-transform: uppercase;
-  font-family: 'Novecento-Bold'; }
-
-.error404 .widget ul {
-  padding-left: 0;
-  margin-left: 0; }
-
-.error404 .widget li {
-  list-style: none;
-  color: #248a83; }
-
-.error404 .widget a {
-  text-decoration: none; }
-
-.error404 .widget a:visited {
-  color: #248a83; }
-
-.error404 .error-404 {
+.error404 {
   padding-right: 5%;
   width: 100%;
   padding-top: 3rem;
   padding-bottom: 3rem; }
+  .error404 .site-header {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-bottom: 1px solid #e1e1e1;
+    position: fixed;
+    -webkit-transition: top .5s linear;
+    transition: top .5s linear;
+    width: 100%;
+    z-index: 3;
+    top: 32px; }
+  .error404 .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 1120px;
+    margin-left: 0;
+    margin-right: 0; }
+  .error404 .site-navi a {
+    color: #248a83;
+    text-decoration: none;
+    text-shadow: none; }
+  .error404 .error-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    padding-top: 50px; }
+  .error404 .widget-area {
+    border-left: 1px solid #e1e1e1; }
+  .error404 .page-title {
+    text-transform: uppercase;
+    font-family: 'Novecento-Bold'; }
+  .error404 .widget h2 {
+    text-transform: uppercase;
+    font-family: 'Novecento-Bold'; }
+  .error404 .widget ul {
+    padding-left: 0;
+    margin-left: 0; }
+  .error404 .widget li {
+    list-style: none;
+    color: #248a83; }
+  .error404 .widget a {
+    text-decoration: none; }
+  .error404 .widget a:visited {
+    color: #248a83; }
 
 .tax-product_type .site-header {
   background-color: rgba(255, 255, 255, 0.85);

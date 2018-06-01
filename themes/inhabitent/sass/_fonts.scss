@@ -1,3 +1,50 @@
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+    font-family: 'Merriweather-Bold-Italic';
+    src: url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-BoldItalic.woff2') format('woff2'),
+        url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather-Italic';
+    src: url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-LightItalic.woff2') format('woff2'),
+        url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather-Bold';
+    src: url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Bold.woff2') format('woff2'),
+        url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Novecento-Bold';
+    src: url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/7d984d59c186880dc1cbe0cbc78cfdf7.woff2') format('woff2'),
+        url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/7d984d59c186880dc1cbe0cbc78cfdf7.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Light.woff2') format('woff2'),
+        url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Novecento';
+    src: url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/ea32d7a417fa146c0a4460d78570703d.woff2') format('woff2'),
+        url('/inhabitent/wp-content/themes/inhabitent/assets/fonts/ea32d7a417fa146c0a4460d78570703d.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
