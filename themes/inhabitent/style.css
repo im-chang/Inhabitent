@@ -930,6 +930,9 @@ a {
   background-color: #e1e1e1;
   height: 250px; }
 
+.entry-container {
+  padding: .7rem; }
+
 .entry-meta {
   font-size: 0.75rem; }
 

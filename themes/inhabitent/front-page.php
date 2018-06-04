@@ -67,7 +67,7 @@ get_header(); ?>
                         // echo the_title;
                         ?>
                         </div>
-                        
+                        <div class="entry-container">
                         <div class="entry-meta">
                                 <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
                             </div><!-- .entry-meta -->
@@ -75,6 +75,7 @@ get_header(); ?>
                             <h2 class="journal-title"><?php the_title(); ?></h2>
                             
                             <a class="btn2" href="<?php echo the_permalink(); ?>">Read More</a>
+                        </div>
                     </div>
                     
                     <?php endforeach; wp_reset_postdata(); ?>
