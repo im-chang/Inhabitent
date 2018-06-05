@@ -85,7 +85,7 @@ get_header(); ?>
     </div>
 </section>
 <section class="adventure">
-    <h2>LATEST ADVENTURES</h2>
+    <h2>latest adventures</h2>
     <ul>
                 <li class="canoe">
                     <div class="adventure-thumbnail">
@@ -94,7 +94,7 @@ get_header(); ?>
                     <div class="adventure-time">
                         <h3 class="adventure-text">Getting Back to Nature in a Canoe</h3>
                     </div>
-                    <a class="adventure-button" href="readmore">READ MORE</a>
+                    <a class="adventure-button" href="readmore">Read More</a>
                 </li>
                 <li class="night">
                     <div class="adventure-thumbnail">
@@ -103,7 +103,7 @@ get_header(); ?>
                     <div class="adventure-time">
                         <h3 class="adventure-text">A Night with Friends at the Beach</h3>
                     </div>
-                    <a class="adventure-button" href="readmore">READ MORE</a>
+                    <a class="adventure-button" href="readmore">Read More</a>
                 </li>
                 <li class="mountain">
                     <div class="adventure-thumbnail">
@@ -112,7 +112,7 @@ get_header(); ?>
                     <div class="adventure-time">
                         <h3 class="adventure-text">Taking in the View at Big Mountain</h3>
                     </div>
-                    <a class="adventure-button" href="readmore">READ MORE</a>
+                    <a class="adventure-button" href="readmore">Read More</a>
                 </li>
                 <li class="stars">
                     <div class="adventure-thumbnail">
@@ -121,7 +121,7 @@ get_header(); ?>
                     <div class="adventure-time">
                         <h3 class="adventure-text">Star-Gazing at the Night Sky</h3>
                     </div>
-                    <a class="adventure-button" href="readmore">READ MORE</a>
+                    <a class="adventure-button" href="readmore">Read More</a>
                 </li>
     </ul>
 </section>

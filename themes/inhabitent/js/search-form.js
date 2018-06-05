@@ -1,22 +1,22 @@
 (function($){$(document).ready(
     function(){
-        $('.search-field').hide();
-        $('.search-submit').on( "click", 
+        $('.site-header .search-field').hide();
+        $('.site-header .search-submit').on( "click", 
         function( event ){
             event.preventDefault();
-            $('.search-field').show();
-            $('.search-field').focus();
+            $('.site-header .search-field').show();
+            $('.site-header .search-field').focus();
         } 
     )  
 
-        $('.search-field').on('blur',
+        $('.site-header .search-field').on('blur',
         function(){
-            $('.search-field').hide();
+            $('.site-header .search-field').hide();
         });
 
         $(document).keydown(function( event ) {
             if ( event.which == 13 ) {
-                $('.search-form').submit();
+                $('.site-header .search-form').submit();
         
             }
         });

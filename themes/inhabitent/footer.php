@@ -14,7 +14,7 @@
 				<div class="footer-block">
 					<div class="footer-item">
 						<div class="contact">
-							<h3>CONTACT INFO</h3>
+							<h3>contact info</h3>
 							<p><i class="fa fa-envelope"></i>
 							<a href="mailto:info@inhabitent.com">info@inhabitent.com</a>
 							</p>
@@ -30,7 +30,7 @@
 					</div>
 						<div class="footer-item">
 							<div class="business-hours">
-								<h3>BUSINESS HOURS</h3>
+								<h3>business hours</h3>
 								<p>
 									<span class="hours-info">
 									Monday-Friday:
