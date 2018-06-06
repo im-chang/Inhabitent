@@ -747,14 +747,12 @@ a {
 .search-field {
   background-color: transparent; }
 
-input[type=search] {
+.site-header input[type=search] {
   font-size: 1rem;
   font-family: 'Novecento';
   border: none;
   outline: none;
   text-transform: uppercase; }
-  input[type=search]:focus {
-    color: #fff; }
 
 .header-container {
   width: 1120px;
@@ -808,6 +806,9 @@ input[type=search] {
   .search-navi a {
     text-decoration: none;
     color: white; }
+
+.home .site-header input[type=search]:focus {
+  color: #fff; }
 
 .home .site-header .logo-tent2 {
   display: none; }
@@ -1313,6 +1314,9 @@ iframe {
   text-decoration: none;
   text-transform: uppercase; }
 
+.page-id-87 .site-header input[type=search]:focus {
+  color: #fff; }
+
 .page-id-87 .logo-tent2 {
   display: none; }
 
@@ -1442,10 +1446,10 @@ iframe {
   text-transform: uppercase;
   font-family: 'Novecento'; }
 
-.archive .logo-tent {
+.date .logo-tent {
   display: none; }
 
-.archive .site-header {
+.date .site-header {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;
   position: fixed;
@@ -1453,6 +1457,21 @@ iframe {
   transition: top .5s linear;
   width: 100%;
   z-index: 3; }
+
+.date .site-navi a {
+  color: #248a83;
+  text-decoration: none;
+  text-shadow: none; }
+
+.date .hfeed {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 50px; }
+
+.date .site-main {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+  width: 100%; }
 
 .blog .logo-tent {
   display: none; }
