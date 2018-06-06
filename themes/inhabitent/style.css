@@ -226,25 +226,25 @@ th {
 # Embedded Fonts
 --------------------------------------------------------------*/
 @font-face {
-  font-family: 'Merriweather-Bold-Italic';
+  font-family: 'Merriweather';
   src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Merriweather-Italic';
+  font-family: 'Merriweather';
   src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-LightItalic.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Merriweather-Bold';
+  font-family: 'Merriweather';
   src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Bold.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/Merriweather-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Novecento-Bold';
+  font-family: 'Novecento';
   src: url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/7d984d59c186880dc1cbe0cbc78cfdf7.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/assets/fonts/7d984d59c186880dc1cbe0cbc78cfdf7.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
@@ -607,7 +607,7 @@ a {
   line-height: 1.75;
   padding-left: 5%; }
   .widget-area h2 {
-    font-family: 'Novecento-Bold';
+    font-family: 'Novecento';
     font-size: 1.5rem; }
   .widget-area a {
     color: #248a83;
@@ -615,7 +615,7 @@ a {
   .widget-area i {
     color: #404040; }
   .widget-area .day-of-week {
-    font-family: 'Merriweather-Bold'; }
+    font-family: 'Merriweather'; }
   .widget-area ul {
     margin-left: 0;
     padding-left: 0; }
@@ -888,7 +888,7 @@ a {
   text-transform: uppercase; }
 
 .journal-title {
-  font-family: 'Novecento-Bold';
+  font-family: 'Novecento';
   margin-top: 0;
   margin-bottom: 0;
   color: #248a83;
@@ -1082,7 +1082,7 @@ a {
   margin-right: auto;
   font-family: 'Merriweather'; }
   .footer-container h3 {
-    font-family: 'Novecento-Bold'; }
+    font-family: 'Novecento'; }
   .footer-container a {
     text-decoration: none;
     color: white; }
@@ -1218,7 +1218,7 @@ label {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  font-family: 'Novecento-Bold';
+  font-family: 'Novecento';
   font-size: 2.1rem; }
 
 .shop-content {
@@ -1273,7 +1273,7 @@ iframe {
   margin-top: 0;
   margin-bottom: 0;
   text-transform: uppercase;
-  font-family: 'Novecento-Bold'; }
+  font-family: 'Novecento'; }
 
 .page-id-162 .wpcf7-submit {
   background: #248a83;
@@ -1297,13 +1297,13 @@ iframe {
   max-width: 800px; }
 
 .page-id-87 .entry-title {
-  font-family: 'Novecento-Bold'; }
+  font-family: 'Novecento'; }
 
 .page-id-87 .entry-content h2 {
   color: #2f1339;
   font-size: 2.1rem;
   margin-bottom: 1.5rem;
-  font-family: 'Novecento-Bold'; }
+  font-family: 'Novecento'; }
 
 .post-type-archive a:visited {
   color: black; }
@@ -1399,7 +1399,7 @@ iframe {
   margin-top: 0;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
-  font-family: 'Novecento-Bold';
+  font-family: 'Novecento';
   font-size: 2.4rem; }
 
 .single-product .price {
@@ -1459,7 +1459,7 @@ iframe {
     top: -500px;
     margin-bottom: -500px;
     text-transform: uppercase;
-    font-family: 'Novecento-Bold'; }
+    font-family: 'Novecento'; }
 
 .blog .entry-meta {
   background-color: #248a83;
@@ -1524,7 +1524,7 @@ iframe {
 .search .page-title {
   text-align: left;
   text-transform: uppercase;
-  font-family: 'Novecento-Bold';
+  font-family: 'Novecento';
   font-size: 2.4rem; }
 
 .search .content-area {
@@ -1541,7 +1541,7 @@ iframe {
   line-height: 2.5rem; }
   .search .entry-title a {
     color: #248a83;
-    font-family: 'Novecento-Bold';
+    font-family: 'Novecento';
     text-transform: uppercase;
     font-size: 2.1rem; }
 
@@ -1630,7 +1630,27 @@ iframe {
   max-width: 500px;
   top: -450px;
   margin-bottom: -80px;
-  font-family: Novecento-Bold; }
+  font-family: Novecento; }
+
+.single-post .entry-header {
+  position: relative;
+  height: 500px; }
+  .single-post .entry-header img {
+    width: 100%;
+    height: 100%; }
+
+.single-post .entry-meta {
+  position: absolute;
+  background-color: #248a83;
+  color: #fff;
+  text-transform: uppercase;
+  right: 0;
+  bottom: 0%;
+  padding: 0.5rem;
+  font-family: 'Novecento';
+  font-size: 1rem; }
+  .single-post .entry-meta a {
+    color: #fff; }
 
 .single-post .submit {
   background: #248a83;
@@ -1695,10 +1715,10 @@ iframe {
     border-left: 1px solid #e1e1e1; }
   .error404 .page-title {
     text-transform: uppercase;
-    font-family: 'Novecento-Bold'; }
+    font-family: 'Novecento'; }
   .error404 .widget h2 {
     text-transform: uppercase;
-    font-family: 'Novecento-Bold'; }
+    font-family: 'Novecento'; }
   .error404 .widget ul {
     padding-left: 0;
     margin-left: 0; }
@@ -1746,7 +1766,7 @@ iframe {
 
 .tax-product_type .page-title {
   text-align: center;
-  font-family: 'Novecento-Bold';
+  font-family: 'Novecento';
   text-transform: uppercase;
   font-size: 2.4rem;
   font-weight: 400; }
