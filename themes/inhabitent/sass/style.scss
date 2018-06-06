@@ -65,12 +65,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "page-templates";
 
 .body {
-	color: #404040;
+	color: $color__text-main;
     font-family: 'Merriweather';
     font-size: 16px;
     font-size: 1rem;
 	line-height: 1.75;
-	background-color: #ffffff;
+	background-color: $color__background-bodyfff;
 }
 
 a {
@@ -151,7 +151,7 @@ a {
 
 	.site-header {
 		i {
-			color: #fff;
+			color: $color__background-body;
 		}
 	}
 }
@@ -217,7 +217,7 @@ a {
 	background: #248a83;
     border: none;
     border-radius: 0;
-    color: #fff;
+    color: $color__background-body;
     cursor: pointer;
     font-family: Novecento Sans Web,sans-serif;
     font-size: .9rem;
@@ -228,7 +228,7 @@ a {
 }
 
 .btn:visited {
-	color: #fff;
+	color: $color__background-body;
 }
 
 .btn:hover {
@@ -405,7 +405,7 @@ a {
 		margin: 1.5rem;
 		position: absolute;
 		z-index: 2;
-		color: #fff;
+		color: $color__background-body;
 		font-size: 2.4rem;
 		font-family: 'Merriweather';
 		font-weight: 400;
@@ -459,8 +459,8 @@ a {
 		position: absolute;
 		top: 170px;
 		left: 50px;
-		border: 1px solid #fff;
-		color: #fff;
+		border: 1px solid $color__background-body;
+		color: $color__background-body;
 		padding: .75rem 1.5rem;
 		cursor: pointer;
 		text-transform: uppercase;
@@ -511,7 +511,7 @@ a {
 
 	p {
 		font-size: 1.2rem;
-		color: #fff;
+		color: $color__background-body;
 	}
 }
 
@@ -520,7 +520,7 @@ a {
 	justify-content: center;
 	padding-top: 30px;
 	text-transform: uppercase;
-	color: #fff;
+	color: $color__background-body;
 }
 
 .shop-items {
@@ -591,7 +591,7 @@ a {
 
 		a {
 			text-decoration: none;
-			background: #fff;
+			background: $color__background-body;
 			float: left;
 		}
 
@@ -710,7 +710,7 @@ iframe {
 		background: #248a83;
 		border: none;
 		border-radius: 0;
-		color: #fff;
+		color: $color__background-body;
 		cursor: pointer;
 		font-family: 'Novecento';
 		box-shadow: none;
@@ -899,7 +899,7 @@ iframe {
 		
 		a {
 			background-color: #248a83;
-			color: #fff;
+			color: $color__background-body;
 			font-size: 33.6px;
 			font-size: 2.1rem;
 			left: -24px;
@@ -919,7 +919,7 @@ iframe {
 	.entry-meta {
 		background-color: #248a83;
 		bottom: 0;
-		color: #fff;
+		color: $color__background-body;
 		display: inline-block;
 		font-family: 'Novecento';
 		font-size: 1rem;
@@ -1019,7 +1019,7 @@ iframe {
 
 			a.page-numbers {
 				background-color: #248a83;
-				color: #fff;
+				color: $color__background-body;
 				display: inline-block;
 				line-height: 1;
 				padding: .5rem .75rem;
@@ -1029,7 +1029,7 @@ iframe {
 
 			span.page-numbers.current {
 				background-color: gray;
-				color: #fff;
+				color: $color__background-body;
 				display: inline-block;
 				line-height: 1;
 				padding: .5rem .75rem;
@@ -1096,7 +1096,7 @@ iframe {
 
 	.entry-title {
 		background-color: #248a83;
-		color: #fff;
+		color: $color__background-body;
 		position: relative;
 		text-transform: uppercase;
 			font-size: 2.1rem;
@@ -1121,7 +1121,7 @@ iframe {
 	.entry-meta {
 		position: absolute;
 		background-color: #248a83;
-		color: #fff;
+		color: $color__background-body;
 		text-transform: uppercase;
 		right: 0;
 		bottom: 0%;
@@ -1130,7 +1130,7 @@ iframe {
 		font-size: 1rem;
 
 			a {
-				color: #fff;
+				color: $color__background-body;
 			}
 	}
 
@@ -1138,7 +1138,7 @@ iframe {
 		background: #248a83;
 		border: none;
 		border-radius: 0;
-		color: #fff;
+		color: $color__background-body;
 		cursor: pointer;
 		font-family: Novecento;
 		box-shadow: none;
@@ -1152,11 +1152,11 @@ iframe {
 	.site-footer {
 		
 		a{
-			color: #fff;
+			color: $color__background-body;
 		}
 
 		a:visited {
-			color: #fff;
+			color: $color__background-body;
 		}
 	}
 }
@@ -1291,7 +1291,7 @@ iframe {
 .page-template {
 	.site-header {
 		i {
-			color: #fff;
+			color: $color__background-body;
 		}
 	}
 }
