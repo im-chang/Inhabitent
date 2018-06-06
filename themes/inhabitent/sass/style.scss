@@ -70,7 +70,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     font-size: 16px;
     font-size: 1rem;
 	line-height: 1.75;
-	background-color: $color__background-bodyfff;
+	background-color: $color__background-body;
 }
 
 a {
@@ -150,6 +150,11 @@ a {
 .home {
 
 	.site-header {
+
+		.logo-tent2 {
+			display: none;
+		}
+
 		i {
 			color: $color__background-body;
 		}
@@ -669,6 +674,10 @@ iframe {
 
 .page-id-162 {
 
+	.logo-tent {
+		display: none;
+	}
+
 	.site-header {
 		background-color: hsla(0,0%,100%,.85);
 		border-bottom: 1px solid #e1e1e1;
@@ -725,6 +734,14 @@ iframe {
 
 .page-id-87 {
 
+	.logo-tent2 {
+		display: none;
+	}
+
+	i {
+		color: $color__background-body;
+	}
+
 	.entry-content {
 		margin: 3rem auto;
 		margin-bottom: 4rem;
@@ -744,6 +761,10 @@ iframe {
 }
 
 .post-type-archive {
+
+	.logo-tent {
+		display: none;
+	}
 
 	a:visited {
 		color: black;
@@ -860,6 +881,10 @@ iframe {
 
 .blog {
 
+	.logo-tent {
+		display: none;
+	}
+
 	.site-header {
 		background-color: hsla(0,0%,100%,.85);
 		border-bottom: 1px solid #e1e1e1;
@@ -890,6 +915,13 @@ iframe {
 
 	.entry-header {
 		margin-top: 5px;
+		position: relative;
+		height: 506px;
+		width: 60vw;
+
+			img {
+				height: 100%;
+			}
 	}
 
 	.entry-title {
@@ -907,7 +939,7 @@ iframe {
 			position: relative;
 			margin-top: 2.25rem;
 			max-width: 100%;
-			top: -500px;
+			top: -530px;
 			margin-bottom: -500px;
 			text-transform: uppercase;
 			font-family: 'Novecento';
@@ -926,21 +958,17 @@ iframe {
 		padding: 0.5rem;
 		padding-left: 1rem;
 		padding-right: 1rem;
-		position: relative;
-		right: -316px;
-		bottom: 97.2px;
+		position: absolute;
+		right: 0;
 		text-transform: uppercase;
-	}
-
-	.entry-content {
-		p {
-			position: relative;
-			bottom: 80px;
-		}
 	}
 }
 
 .search {
+
+		.logo-tent {
+			display: none;
+		}
 
 		.site-header {
 			background-color: hsla(0,0%,100%,.85);
@@ -1041,6 +1069,11 @@ iframe {
 }
 
 .single-post {
+
+	.logo-tent {
+		display: none;
+	}
+
 	.site-header {
 		background-color: hsla(0,0%,100%,.85);
 		border-bottom: 1px solid #e1e1e1;
@@ -1103,7 +1136,8 @@ iframe {
 			line-height: 2.5rem;
 			margin-top: 2.25rem;
 			max-width: 500px;
-			top: -450px;
+			bottom: 500px;
+			padding: .75rem 1.5rem;
 			margin-bottom: -80px;
 			font-family: Novecento;
 	}
@@ -1165,7 +1199,12 @@ iframe {
 		padding-right: 5%;
 		width: 100%;
 		padding-top: 3rem;
-    	padding-bottom: 3rem;
+		padding-bottom: 3rem;
+		
+	.logo-tent {
+		display: none;
+	}
+
 	.site-header {
 		background-color: hsla(0,0%,100%,.85);
 		border-bottom: 1px solid #e1e1e1;
@@ -1288,13 +1327,6 @@ iframe {
 	}
 }
 
-.page-template {
-	.site-header {
-		i {
-			color: $color__background-body;
-		}
-	}
-}
 
 
 
