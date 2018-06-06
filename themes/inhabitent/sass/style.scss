@@ -82,6 +82,25 @@ a {
 	left: 0;
 	right: 0;
 }
+.search label {
+	color: $color__background-ins;
+}
+
+.search-field {
+	background-color: transparent;
+}
+
+input[type=search] {
+	font-size: 1rem;
+	font-family: 'Novecento';
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+
+	&:focus {
+		color: $color__background-body;
+	}
+}
 
 .header-container {
 	width: 1120px;
@@ -117,8 +136,7 @@ a {
 	
 		i {
 			color: #248a83;
-			font-size: inherit;
-			padding-left: 1.5rem;
+			font-size: 1rem;
 		}
 }
 
@@ -138,6 +156,10 @@ a {
 		font-family: 'Novecento';
 		text-transform: uppercase;
 		display: inline;
+	}
+
+	li:last-child {
+		padding-right: 1.5rem;
 	}
 
 	a {
@@ -937,7 +959,7 @@ iframe {
 		margin-top: 5px;
 		position: relative;
 		height: 506px;
-		width: 60vw;
+		width: 100%;
 
 			img {
 				height: 100%;
