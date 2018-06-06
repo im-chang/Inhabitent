@@ -815,6 +815,10 @@ iframe {
 
 .single-product {
 
+	.logo-tent {
+		display: none;
+	}
+
 	.site-header {
 		background-color: hsla(0,0%,100%,.85);
 		border-bottom: 1px solid #e1e1e1;
@@ -876,6 +880,22 @@ iframe {
 		font-family: 'Novecento';
 	}
 
+
+}
+
+.archive {
+	.logo-tent {
+		display: none;
+	}
+
+	.site-header {
+		background-color: hsla(0,0%,100%,.85);
+		border-bottom: 1px solid #e1e1e1;
+		position: fixed;
+		transition: top .5s linear;
+		width: 100%;
+		z-index: 3;
+	}
 
 }
 

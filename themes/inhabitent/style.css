@@ -1363,6 +1363,9 @@ iframe {
     font-size: 1rem;
     line-height: 1.75; }
 
+.single-product .logo-tent {
+  display: none; }
+
 .single-product .site-header {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;
@@ -1422,6 +1425,18 @@ iframe {
   margin-top: 0;
   text-transform: uppercase;
   font-family: 'Novecento'; }
+
+.archive .logo-tent {
+  display: none; }
+
+.archive .site-header {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  -webkit-transition: top .5s linear;
+  transition: top .5s linear;
+  width: 100%;
+  z-index: 3; }
 
 .blog .logo-tent {
   display: none; }
