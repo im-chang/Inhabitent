@@ -1466,7 +1466,38 @@ iframe {
 .date .hfeed {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding-top: 50px; }
+  padding-top: 50px;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.date .entry-header {
+  position: relative; }
+
+.date .entry-title {
+  background-color: #248a83;
+  left: 0;
+  padding: .1rem 1.5rem;
+  position: absolute;
+  margin-top: 2.25rem;
+  top: 0;
+  max-width: 75%; }
+  .date .entry-title a {
+    background: none;
+    font-family: 'Novecento';
+    font-size: 2.1rem;
+    color: #fff; }
+
+.date .entry-meta {
+  position: absolute;
+  top: 90%;
+  right: 0;
+  background-color: #248a83;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Novecento';
+  padding: .5rem .5rem .5rem;
+  font-size: 1rem; }
 
 .date .site-main {
   border-right: 1px solid #e1e1e1;

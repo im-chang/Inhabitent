@@ -1,6 +1,6 @@
 (function($)
     
-    {$(document).ready(function (event) {
+    {$(document).ready(function () {
 
         $('.site-header .search-field').hide();
 
@@ -14,14 +14,12 @@
 
 
         $('.site-header .search-field').on('blur',
-        function( event ){
+        function(){
             $('.site-header .search-field').hide({duration:300});
         });
 
     }
 )
-
-
 
 
 })(jQuery);
