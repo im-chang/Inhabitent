@@ -88,7 +88,7 @@ function red_starter_scripts() {
 	wp_enqueue_script( 'search-form', get_template_directory_uri() .
 	'/js/search-form.js', array('jquery-cdn'), '', true );
 
-	wp_enqueue_script('jquery-cdn', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js', array(), '3.3.1', true);
+	wp_enqueue_script('jquery');
 
 	wp_enqueue_style( 'inhabitent-fontawesome', 'https://use.fontawesome.com/releases/v5.0.13/css/all.css' );
 
