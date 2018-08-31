@@ -2,11 +2,11 @@
 
 Inhabitent is a front-end website built using Wordpress. Users of this website are able to browse and shop for various camping equipment as well as search for ideas for their next camping trip.
 
-#Screenshots:
+# Screenshots:
 
 ![inhabitent screen](https://user-images.githubusercontent.com/38142960/44937480-4efb6800-ad2e-11e8-80c0-6c64da52b135.jpg)
 
-#Technologies used:
+# Technologies used:
 
 -Javascript
 -PHP
